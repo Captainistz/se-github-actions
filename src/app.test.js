@@ -1,6 +1,4 @@
-const { dayOfTheWeek } = require('./app');
-
-
+const { dayOfTheWeek, monthOfTheYear } = require('./app')
 
 test('getDay returns the month of the year', () => {
   const month = monthOfTheYear(new Date('3/11/2020'))
@@ -8,7 +6,6 @@ test('getDay returns the month of the year', () => {
 })
 
 test('getDay returns the long-format day of the week', () => {
-    const day = dayOfTheWeek( new Date('3/11/2020') );
-    expect( day ).toBe('Wednesday');
-});
-
+  const day = dayOfTheWeek(new Date('3/11/2020'))
+  expect(day).toBe('Wednesday')
+})
